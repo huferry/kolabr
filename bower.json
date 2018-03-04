@@ -1,0 +1,21 @@
+{
+  "name": "kolabr",
+  "description": "collaboration and planning",
+  "main": "server.js",
+  "authors": [
+    "LAPTOP-C284JHA0\\hufer <huferry@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "http://heruutomo.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.0.0"
+  }
+}

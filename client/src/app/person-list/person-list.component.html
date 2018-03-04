@@ -1,0 +1,25 @@
+<form class="card" (submit)="addPerson($event)">
+    <div class="card-title">Enter a new worker:</div>
+    <div class="card-body">
+      <label for="inputName">Name</label>
+      <input type="text" [(ngModel)]="name" name="name" class="form-control" id="inputName">
+      <label for="inputPhone">Phone</label>
+      <input type="text" [(ngModel)]="phone" name="phone" class="form-control" id="inputPhone">
+      <label for="inputEmail">Email</label>
+      <input type="email" [(ngModel)]="email" name="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+      <br>
+      <button type="submit" class="btn btn-outline-primary btn-sm">Add</button>
+    </div>
+  </form>
+  <hr>
+
+<div class="container">
+  <div *ngFor="let p of persons">
+    <div class="row mt-1">
+      <div class="col-md-4">{{p.name}}</div>
+      <div class="col-md-2">{{p.phone}}</div>
+      <div class="col-md-4">{{p.email}}</div>
+      <div class="btn btn-outline-danger btn-sm" (click)="deletePerson(p._id)">remove</div>
+    </div>
+  </div>
+</div>
